@@ -26,7 +26,7 @@ const TASK_TYPE = {
 const Tasks = () => {
   const params = useParams();
 
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -62,7 +62,7 @@ const Tasks = () => {
           </div>
         )}
 
-        {selected !== 1 ? (
+        {selected  == 0 ? (
           <BoardView tasks={tasks} />
         ) : (
           <div className='w-full'>
