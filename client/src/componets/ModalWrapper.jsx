@@ -1,4 +1,4 @@
-import { Dialog, Transition, TransitionChild } from "@headlessui/react";
+import { Dialog, DialogPanel, Transition, TransitionChild} from "@headlessui/react";
 import { Fragment, useRef } from "react";
 
 const ModalWrapper = ({ open, setOpen, children }) => {
