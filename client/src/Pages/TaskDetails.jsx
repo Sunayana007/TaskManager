@@ -264,20 +264,19 @@ const Activities = ({ activity, id }) => {
  
   return (
     <div className='w-full flex gap-10 2xl:gap-20 min-h-screen px-10 py-8 bg-white shadow rounded-md justify-between overflow-y-auto'>
-      <div className='w-full md:w-1/2'>
-        <h4 className='text-gray-600 font-semibold text-lg mb-5'>Activities</h4>
+    <div className='w-full md:w-1/2'>
+      <h4 className='text-gray-600 font-semibold text-lg mb-5'>Activities</h4>
 
-        <div className='w-full'>
-          {activity?.map((el, index) => (
-            <Card
-              key={index}
-              item={el}
-              isConnected={index < activity.length - 1}
-            />
-          ))}
-        </div>
+      <div className='w-full'>
+        {activity?.map((el, index) => (
+          <Card
+            key={index}
+            item={el}
+            isConnected={index < activity.length - 1}
+          />
+        ))}
       </div>
-
+    </div>
       <div className='w-full md:w-1/3'>
         <h4 className='text-gray-600 font-semibold text-lg mb-5'>
           Add Activity
