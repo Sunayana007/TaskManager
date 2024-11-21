@@ -149,7 +149,11 @@ const Trash = () => {
         type={type}
         setType={setType}
         onClick={() => deleteRestoreHandler()}
+<<<<<<< HEAD
       />
+=======
+      /> 
+>>>>>>> e8433364a505b685140a9be3f726a419654c3638
     </>
   );
 

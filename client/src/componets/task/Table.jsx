@@ -30,6 +30,10 @@ const Table = ({ tasks }) => {
 
   const deleteHandler = () => {};
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8433364a505b685140a9be3f726a419654c3638
   const TableHeader = () => (
     <thead className="w-full border-b border-gray-300">
       <tr className="w-full text-black  text-left">
@@ -136,7 +140,11 @@ const Table = ({ tasks }) => {
           </table>
         </div>
       </div>
+<<<<<<< HEAD
       {/* TODO */}
+=======
+       
+>>>>>>> e8433364a505b685140a9be3f726a419654c3638
       <ConfirmatioDialog
         open={openDialog}
         setOpen={setOpenDialog}
