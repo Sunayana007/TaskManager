@@ -11,6 +11,7 @@ import Button from "../Button";
 import { FaList } from "react-icons/fa";
 import clsx from "clsx";
 import { BGS, PRIOTITYSTYELS, TASK_TYPE, formatDate } from "../../utils";
+import ConfirmatioDialog from "../Dialogs";
 
 const ICONS = {
   high: <MdKeyboardDoubleArrowUp />,
@@ -26,6 +27,8 @@ const Table = ({ tasks }) => {
     setSelected(id);
     setOpenDialog(true);
   };
+
+  const deleteHandler = () => {};
 
   const TableHeader = () => (
     <thead className="w-full border-b border-gray-300">
@@ -133,12 +136,12 @@ const Table = ({ tasks }) => {
           </table>
         </div>
       </div>
-      {/* 
+      {/* TODO */}
       <ConfirmatioDialog
         open={openDialog}
         setOpen={setOpenDialog}
         onClick={deleteHandler}
-      />*/}
+      />
     </>
   );
 };
